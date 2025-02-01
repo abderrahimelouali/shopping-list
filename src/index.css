@@ -1,0 +1,171 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f9fa;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+}
+
+/* Header (25%) */
+.header {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  text-align: center;
+  color: #007bff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+/* Main Content (50%) */
+.main-content {
+  flex: 2;
+  overflow-y: auto;
+}
+
+/* Form */
+.add-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.add-form h3 {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.form-group {
+  display: flex;
+  gap: 5px;
+}
+
+input, select, button {
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input {
+  flex-grow: 1;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* List */
+.list {
+  margin-top: 10px;
+}
+
+.list ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background: #f1f1f1;
+  border-radius: 5px;
+  justify-content: space-between;
+}
+
+.list-item input[type="checkbox"] {
+  transform: scale(1.2);
+}
+
+.packed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.list-item button {
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.list-item button:hover {
+  color: red;
+}
+
+/* Footer (25%) */
+.states {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.empty {
+  text-align: center;
+  font-style: italic;
+  color: #777;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+  .container {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .logo {
+    font-size: 1rem;
+  }
+
+  .list ul {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+
+  button {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  input, select {
+    font-size: 12px;
+    padding: 6px;
+  }
+}
