@@ -1,4 +1,3 @@
-It sounds like you're making great progress with your shopping list application! Here's a summary of all the features and components you've worked on so far:
 
 ### **Key Features**
 1. **Item Management:**
